@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>Petty Shelter</title>
+  <style>
+    body {
+      background: white;
+      color: #242742;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .success-message {
+      margin: 0 auto;
+      max-width: 600px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .success-message img {
+      display: block;
+      margin: 0 auto;
+      width: auto;
+    }
+    .success-message-content {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .success-message-content h1 {
+      font-size: 32px;
+      margin: 10px 0;
+    }
+    .attribution {
+      text-align: center;
+      margin-top: 20px;
+      color: #666;
+    }
+    .attribution a:hover{
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="success-message">
+    <img alt="Success Image" style="{{style}}" src="https://ojutalayomi.github.io/feetbook/FeetBook/public/images/icon-success.png">
+    <div class="success-message-content">
+      <h1>Hello {{name}},</h1>
+      <p>Unfortunately, your invitation to join Petty Shelter has expired({{expiresAt}}).</p>
+      <p>If you're still interested, please contact an admin to receive a new invitation.</p>
+      <p>Best regards,</p>
+      <p>The Petty Shelter Team</p>
+    </div>
+  </div>
+  <div class="attribution"> 
+    Copyright &copy; <a style="text-decoration: none;" href="https://www.petty-shelter.com">Petty Shelter</a>.
+  </div>
+</body>
+</html>

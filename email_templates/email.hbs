@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>Noow App</title>
+  <style>
+    body {
+      background: white;
+      color: #242742;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: hsl(234, 29%, 20%);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .success-message {
+      margin: 0 auto;
+      max-width: 600px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .success-message img {
+      display: block;
+      margin: 0 auto;
+      width: auto;
+    }
+    .success-message-content {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .success-message-content h1 {
+      font-size: 32px;
+      margin: 10px 0;
+    }
+    .success-message-content h2 {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+    .success-message-content h4 {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+    .attribution {
+      text-align: center;
+      margin-top: 20px;
+      color: #666;
+    }
+    .attribution a:hover{
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="success-message">
+    <img alt="{{imageAlt}}" style="{{style}}" src="{{imageSrc}}">
+    <div class="success-message-content">
+      <h1>Dear {{firstname}} {{lastname}},</h1>
+      <h2>{{heading}}</h2>
+      <h4>{{message}}</h4>
+      <h4>{{message1}}</h4>
+      <p>Welcome to Petty Shelter! We’re excited to have you join us in our mission to provide loving forever homes to pets in need.</p>
+      <a href="{{link}}" style="display: {{display}};" class="button">{{Click}}</a>
+      <p><b style="background-color:#4CAF50;color:white;font-size:45px;padding:10px 20px;text-decoration:none;border-radius:5px;">{{confirmationCode}}</b></p>
+      <p>If you did not sign up for Petty Shelter, please disregard this email. Your email address will not be used for any further communication.</p>
+      <p>Thank you for your support!</p>
+      <p>Best regards,</p>
+      <p>The Petty Shelter Team</p>
+    </div>
+  </div>
+  <div class="attribution"> 
+    Copyright &copy; <a style="text-decoration: none;" href="https://www.petty-shelter.com">Petty Shelter</a>.
+  </div>
+</body>
+</html>
