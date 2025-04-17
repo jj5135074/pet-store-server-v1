@@ -11,3 +11,7 @@ pwd.json
 signins.json
 users.json
 db.json
+src/users/models/users.model.ts
+src/pets/models/pets.models.ts
+server/src/users/models/users.model.ts
+server/src/pets/models/pets.models.ts
